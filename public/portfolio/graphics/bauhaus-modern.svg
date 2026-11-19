@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#09090b"/>
+      <stop offset="100%" stop-color="#18181b"/>
+    </linearGradient>
+    <radialGradient id="vignette" cx="50%" cy="50%" r="70%">
+      <stop offset="40%" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.8"/>
+    </radialGradient>
+    <pattern id="gridPattern" width="60" height="60" patternUnits="userSpaceOnUse">
+      <path d="M 60 0 L 0 0 0 60" fill="none" stroke="#ffffff" stroke-width="0.5" stroke-opacity="0.04"/>
+    </pattern>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="1920" height="1080" fill="url(#bg)"/>
+  <rect width="1920" height="1080" fill="url(#gridPattern)"/>
+
+  <!-- Geometry Artwork -->
+  
+      <rect x="500" y="260" width="320" height="320" fill="#f43f5e" fill-opacity="0.85"/>
+      <circle cx="1180" cy="420" r="160" fill="#f59e0b" fill-opacity="0.85"/>
+      <polygon points="960,600 1280,880 640,880" fill="#3b82f6" fill-opacity="0.75"/>
+      <line x1="400" y1="200" x2="400" y2="920" stroke="#71717a" stroke-width="1" stroke-dasharray="4,4"/>
+      <line x1="960" y1="100" x2="960" y2="980" stroke="#71717a" stroke-width="1" stroke-dasharray="4,4"/>
+      <line x1="1520" y1="200" x2="1520" y2="920" stroke="#71717a" stroke-width="1" stroke-dasharray="4,4"/>
+    
+
+  <!-- Vignette -->
+  <rect width="1920" height="1080" fill="url(#vignette)"/>
+
+  <!-- Editorial Meta Overlay -->
+  <g id="editorial-meta">
+    <!-- Top Bar -->
+    <text x="120" y="120" font-family="monospace" font-size="14" fill="#a1a1aa" letter-spacing="4">PORTFOLIO // ARCHIVE</text>
+    <text x="1800" y="120" font-family="monospace" font-size="14" fill="#a1a1aa" text-anchor="end" letter-spacing="4">RES. 4K • COLOR REC.709</text>
+
+    <!-- Bottom Editorial Title -->
+    <text x="120" y="940" font-family="system-ui, -apple-system, sans-serif" font-weight="800" font-size="52" fill="#f4f4f2" letter-spacing="-1">NEO TYPOGRAPHIC SYSTEM</text>
+    <text x="120" y="985" font-family="system-ui, -apple-system, sans-serif" font-weight="400" font-size="20" fill="#94a3b8" letter-spacing="1">Grid & Identity • International Typographic Style</text>
+
+    <!-- Minimal badge -->
+    <rect x="1680" y="920" width="120" height="38" rx="4" fill="#000000" fill-opacity="0.6" stroke="#ffffff" stroke-width="1" stroke-opacity="0.2"/>
+    <text x="1740" y="945" font-family="monospace" font-size="13" fill="#e2e8f0" text-anchor="middle" letter-spacing="2">STUDIO</text>
+  </g>
+</svg>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#111015"/>
+      <stop offset="100%" stop-color="#1d1726"/>
+    </linearGradient>
+    <radialGradient id="vignette" cx="50%" cy="50%" r="70%">
+      <stop offset="40%" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.8"/>
+    </radialGradient>
+    <pattern id="gridPattern" width="60" height="60" patternUnits="userSpaceOnUse">
+      <path d="M 60 0 L 0 0 0 60" fill="none" stroke="#ffffff" stroke-width="0.5" stroke-opacity="0.04"/>
+    </pattern>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="1920" height="1080" fill="url(#bg)"/>
+  <rect width="1920" height="1080" fill="url(#gridPattern)"/>
+
+  <!-- Geometry Artwork -->
+  
+      <defs>
+        <radialGradient id="sculptureGlow" cx="50%" cy="50%" r="50%">
+          <stop offset="0%" stop-color="#f43f5e" stop-opacity="0.3"/>
+          <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+        </radialGradient>
+      </defs>
+      <circle cx="960" cy="540" r="500" fill="url(#sculptureGlow)"/>
+      <ellipse cx="960" cy="540" rx="420" ry="180" fill="none" stroke="#f43f5e" stroke-width="2" transform="rotate(-25 960 540)" stroke-opacity="0.7"/>
+      <ellipse cx="960" cy="540" rx="420" ry="180" fill="none" stroke="#c084fc" stroke-width="2" transform="rotate(35 960 540)" stroke-opacity="0.7"/>
+      <ellipse cx="960" cy="540" rx="420" ry="180" fill="none" stroke="#e2e8f0" stroke-width="1.5" transform="rotate(95 960 540)" stroke-opacity="0.5"/>
+    
+
+  <!-- Vignette -->
+  <rect width="1920" height="1080" fill="url(#vignette)"/>
+
+  <!-- Editorial Meta Overlay -->
+  <g id="editorial-meta">
+    <!-- Top Bar -->
+    <text x="120" y="120" font-family="monospace" font-size="14" fill="#a1a1aa" letter-spacing="4">PORTFOLIO // ARCHIVE</text>
+    <text x="1800" y="120" font-family="monospace" font-size="14" fill="#a1a1aa" text-anchor="end" letter-spacing="4">RES. 4K • COLOR REC.709</text>
+
+    <!-- Bottom Editorial Title -->
+    <text x="120" y="940" font-family="system-ui, -apple-system, sans-serif" font-weight="800" font-size="52" fill="#f4f4f2" letter-spacing="-1">AERODYNAMIC FORM</text>
+    <text x="120" y="985" font-family="system-ui, -apple-system, sans-serif" font-weight="400" font-size="20" fill="#94a3b8" letter-spacing="1">Blender 4.2 • Procedural Geometry Nodes</text>
+
+    <!-- Minimal badge -->
+    <rect x="1680" y="920" width="120" height="38" rx="4" fill="#000000" fill-opacity="0.6" stroke="#ffffff" stroke-width="1" stroke-opacity="0.2"/>
+    <text x="1740" y="945" font-family="monospace" font-size="13" fill="#e2e8f0" text-anchor="middle" letter-spacing="2">STUDIO</text>
+  </g>
+</svg>
